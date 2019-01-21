@@ -18,7 +18,7 @@ int main() {
     //const int cols = 
     cout << endl;
 
-    for (int r = 0; r < rows; r++) {
+    for (int r = 0; r < rows; ++r) {
         string::size_type c = 0;
         while (c != cols) {
             if (r == pad + 1 && c == pad + 1) {
@@ -29,7 +29,7 @@ int main() {
                     cout << "*";
                 else
                     cout << " ";
-                c++; 
+                ++c; 
             }
         }
         cout << endl;
