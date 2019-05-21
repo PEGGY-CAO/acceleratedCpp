@@ -20,10 +20,12 @@ using std::endl;    using std::setprecision;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    cout << "Please enter your first name: ";
+    cout << "Please enter your first name: \t";
     string name;
     cin >> name;
-    cout << "Hello, " << name << "!" << endl;
+    cout << "Hello, " << name << "!" << endl << "Input another name";
+    cin >> name;
+    cout << "HI YA" << name << endl;
     // ask for and read the midterm and final grades
     cout << "Please enter your midterm and final exam grades: ";
     double midterm, final;
