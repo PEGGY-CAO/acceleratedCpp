@@ -1,7 +1,7 @@
 //
 //  main.cpp
 //  calculateWordsCount
-//
+// exercise 3-3 write a program to count how many times each distinct word appears in its input
 //  Created by Yuqi Cao on 5/29/19.
 //  Copyright © 2019 GT. All rights reserved.
 //
@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
     }
     cout << totalWords << endl;
     // sort the vector in ascending order
-    sort(inputs.begin(), inputs.end());    
+    sort(inputs.begin(), inputs.end());
     // use a for loop go through the vector and count words
     int count = 1;
     for (int i = 0; i < totalWords - 1; i++) {
