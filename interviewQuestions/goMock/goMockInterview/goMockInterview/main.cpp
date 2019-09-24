@@ -51,8 +51,6 @@ int findKth(int* a, int* b, int k, int lengthA, int lengthB) {
     int countB = 0;
     while (countForTotal < k && countA < lengthA && countB < lengthB) {
         int intA = *a;//2; 3; 4
-//        std::cout << "intA: " << intA << std::endl;
-//        std::cout << "lengthB: " << lengthB << std::endl;
         int intB = *b;//3
         if (intA <= intB) { //2 < 3; 3 <= 3; 4 > 3
             result = intA;
