@@ -5,13 +5,14 @@
 #include <set>
 
 class IntegerContainerImpl : public IntegerContainer {
-    public:
-    int Add(int value);
-    bool Delete(int value);
-    std::optional<int> GetMedian();
+public:
+    int Add(int value) override;
+    bool Delete(int value) override;
+    std::optional<int> GetMedian() override;
     
-    private:
-    std::set<int> backup;
+private:
+    std::multiset<int> backup;
+
 };
 
 #endif  // INTEGER_CONTAINER_IMPL_HPP_
